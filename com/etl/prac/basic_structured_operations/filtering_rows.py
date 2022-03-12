@@ -31,7 +31,7 @@ df_filter = df.where(expr("count < 2") & expr("ORIGIN_COUNTRY_NAME != 'Romania'"
 df_filter.show(2)
 
 df_count = df.select("ORIGIN_COUNTRY_NAME", "DEST_COUNTRY_NAME").distinct().count()
-print(df_count)
+print(df_count)  
 
 
 
